@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+:root{
+    --red: #E50914;
+    --black: #000000;
+    --light-color: #181818;
+    --box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    --color-2: #fff;
+    --color-gray: #a3a3a3;
+    --color-orangered: orangered;
+    --color-orange: orange;
+}
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body{
+    background-color: var(--light-color);    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 30px 9%;
+}
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: var(--black);
+    position: sticky;
+}
+.heading{
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 23px;
+    color: var(--color-2);
+    background: var(--red);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 14px 15px;
+    margin-left: 70px;
+}
+.dow{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+    color: var(--color-2);
+    background: var(--red);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.sbm{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+    color: var(--color-2);
+    background: var(--red);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 14px 15px;
+    margin-left: 20px;   
+}
+.sbm:hover{
+    background: var(--black);
+    color: var(--red);
+}
+.dow:hover{
+    background: var(--black);
+    color: var(--red);  
+}
+.btn:hover{
+    background: var(--black);
+    color: var(--red);
+}
+header .logo{
+    color: var(--color-2);
+    font-size: 20px;
+    font-weight: bolder;
+}
+header .logo i{
+    color: var(--red);
+}
+header .navbar a{
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    color: var(--color-2);
+}
+header .navbar a:hover{
+    color: var(--color-2);
+    background: var(--red);
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: 2px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-2);
+    border-radius: 50%;
+    background: var(--red);
+}
+header .icons i:hover,
+header .icons a:hover {
+    color: var(--red);
+    background: var(--color-2);
+    transform: rotate(360deg);
+}
+.home{
+    padding: 0;
+}
+.home .box{
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-end;
+    padding: 20px 9%;
+}
+.home .box {
+    justify-content: flex-start;
+}
+.home .box.second{
+    justify-content: flex-end;
+}
+.home .box .content{
+    width: 50rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 30px;
+}
+.home .box .content h3{
+    font-size: 20px;
+    color: var(--color-2);
+    padding-top: 10px;
+    text-transform: uppercase;
+    margin-left: 4px;
+}
+.home .box .content p{
+    line-height: 22px;
+    color: var(--color-2);
+    font-size: 16px;
+    padding: 1rem 0;
+    margin-left: 4px;
+}
+.anime{
+    padding: 20px;
+}
+.anime .box{
+    width: 299px;
+    height: 168px;
+}
+.anime .content h3{
+    font-size: 20px;
+    color: var(--color-2);
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.anime .content P{
+    font-size: 12px;
+    color: var(--color-2);
+    text-decoration: none;
+    display: inline-block;
+}
+.action{
+    padding: 20px;
+}
+.action .box{
+    width: 299px;
+    height: 168px;
+}
+.action .content h3{
+    font-size: 20px;
+    color: var(--color-2);
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.action .content P{
+    font-size: 12px;
+    color: var(--color-2);
+    text-decoration: none;
+    display: inline-block;
+}
+.child{
+    padding: 10px;
+}
+.child .box{
+    width: 299px;
+    height: 168px;
+}
+.child .content h3{
+    font-size: 20px;
+    color: var(--color-2);
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.child .content P{
+    font-size: 12px;
+    color: var(--color-2);
+    text-decoration: none;
+    display: inline-block;
+}
+.family{
+    padding: 20px;
+}
+.family .box{
+    width: 299px;
+    height: 168px;
+}
+.family .content h3{
+    font-size: 20px;
+    color: var(--color-2);
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 10px;  
+}
+.family .content P{
+    font-size: 12px;
+    color: var(--color-2);
+    text-decoration: none;
+    display: inline-block;
+}
+.rodape address p{
+	display: block;
+	text-align: center;
+	color: var(--light-color);
+	font-style: normal;
+	font-size: 16px;	
+}
+.rodape{
+    padding: 60px;
+    background-color: var(--red);
+    margin-top: 60px;
+}
+#cg-logo{
+    width: 100%;
+    height: auto;
+    display: block;
+    float: right;
+}
+#naruto-logo{
+    width: 100%;
+    display: block;
+    height: 100px;
+}
+#kk-logo{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+} 
+#tdl-logo{
+    width: 100%;
+    height: auto;
+}
+.informacao li{
+    color: var(--color-gray);
+    font-size: 14px;
+    list-style: none;
+    margin-top: 10px;
+    display: inline-block;
+    margin: 0 4px;
+    margin-top: 10px;
+}
+.informacao a{
+    color: var(--color-gray);
+}
+.informacao a:hover{
+    text-decoration: underline;
+}
+#info{
+    border: 1px solid var(--color-gray);
+    padding: 0 5px;
+}
+.hist{
+    color: var(--color-2);
+    text-align: justify;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imagens/guerra.jpg);
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    font-size: 15px;
+    margin-top: 50px;
+}
+.hist *{
+    margin-bottom: 20px;
+}
+#history{
+    color:var(--color-orangered);
+    text-align: justify;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imagens/naruto.jpg);
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    font-size: 15px;
+    margin-top: 50px;
+}
+#history *{
+    margin-bottom: 20px;
+}
+#hist-1{
+    color:var(--color-2);
+    text-align: justify;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imagens/rikudou.jpg);
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    font-size: 15px;
+    margin-top: 50px;
+}
+#hist-1 *{
+    margin-bottom: 20px;
+}
+#hist-5{
+    color:var(--color-2);
+    text-align: justify;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imagens/naruto-e-sasuke-wallpaper.jpg);
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    font-size: 15px;
+    margin-top: 50px;
+}
+#hist-5 *{
+    margin-bottom: 20px;
+}
+#hist-2{
+    color:var(--color-2);
+    text-align: justify;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imagens/bijuus-naruto.jpg);
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    font-size: 15px;
+    margin-top: 50px;
+}
+#hist-2 *{
+    margin-bottom: 20px;
+}
+#jutsus{
+	border: 1px solid var(--color-orange);   
+}
+h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+#jutsus1{
+	display: block;
+	font-size: 42px;
+    color: var(--color-orange);
+}
+#jutsus th, #jutsus td{
+	padding: 15px;
+    font-size: 13px;
+    color: var(--color-orange);
+}
+#jutsus th{
+	background-color: var(--color-2);
+    font-size: 13px;
+}
+#jutsus td img{
+	width: 180px;
+	display: block;
+	margin-bottom: 10px;
+	margin: 0 auto;
+}
+#jutsus tr td:first-child{
+	text-align: center;   
+}
+#jutsus tr td:last-child{
+	text-align: left;	
+}
+#jutsus td ul{
+	margin-left: 15px;
+    color: var(--color-2);	
+}
+#jutsus tr:hover{
+	background-color: var(--color-gray);
+}
+#conteudo{
+	width: 800px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#h1-f{
+    color: var(--red);
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.movies h2{
+    display: block;
+    margin-top: 10px;
+    color: var(--red);
+    margin-top: 20px;
+    font-size: 15px;   
+}
+.movies img{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    margin-top: 10px;  
+}
+.movies p{
+    display: block;
+    margin-top: 10px;
+    color: var(--red);
+    text-align: justify;
+    font-size: 15px;  
+    text-align: center;
+    margin-top: 20px;
+}
+#text{
+    width: 800px;
+    margin: 0 auto;
+}
+.jogos h2{
+    display: block;
+    margin-top: 10px;
+    color: var(--red);
+    margin-top: 20px;
+    font-size: 15px;   
+}
+.jogos img{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    margin-top: 10px;  
+}
+.jogos p{
+    display: block;
+    margin-top: 10px;
+    color: var(--red);
+    text-align: justify;
+    font-size: 15px;  
+    text-align: center;
+    margin-top: 20px;
+}
+.char h2{
+    display: block;
+    margin-top: 10px;
+    color: var(--red);
+    margin-top: 20px;
+    font-size: 15px;   
+}
+.char img{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    margin-top: 10px;
+}
+.char p{
+    display: block;
+    margin-top: 10px;
+    color: var(--red);
+    text-align: justify;
+    font-size: 15px;  
+    text-align: center;
+    margin-top: 20px;
+}
